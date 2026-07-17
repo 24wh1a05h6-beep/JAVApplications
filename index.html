@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Commands Display-05h6</title>
+    <style>
+        /* Terminal Container Style */
+        .terminal-block {
+            background-color: #1e1e1e;
+            color: #f8f8f2;
+            border-radius: 6px;
+            padding: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        /* Top window bar decoration */
+        .terminal-header {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+
+        /* Code Block Styling */
+        pre {
+            margin: 0;
+            white-space: pre-wrap; /* Wraps long lines nicely */
+        }
+        code {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        /* Command vs Output highlighting */
+        .command { color: #50fa7b; } /* Green for user input */
+        .comment { color: #6272a4; } /* Gray for explanations */
+    </style>
+</head>
+<body>
+
+    <div class="terminal-block">
+        <div class="terminal-header">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+        </div>
+        <pre><code><span class="comment"># Initialize a new local repository</span>
+<span class="command">$ git init</span>
+
+<span class="comment"># Check the status of your files</span>
+<span class="command">$ git status</span>
+
+<span class="comment"># Stage all changes for the next commit</span>
+<span class="command">$ git add .</span>
+
+<span class="comment"># Commit staged changes with a message</span>
+<span class="command">$ git commit -m "Initial commit"</span></code></pre>
+    </div>
+
+</body>
+</html>
